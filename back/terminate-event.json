@@ -1,0 +1,32 @@
+{
+	"currentIntent": {
+		"slots": {
+			"directory": "d-90672b984c",
+			"username": "renato"
+		},
+		"confirmationStatus": "Confirmed",
+		"name": "TerminateWorkSpace",
+		"slotDetails": {
+			"directory": {
+				"originalValue": "jpdomain",
+				"resolutions": [{
+					"value": "d-90672b984c"
+				}]
+			},
+			"username": {
+				"originalValue": "dani",
+				"resolutions": []
+			}
+		}
+	},
+	"userId": "9k1hyisa06i20931fwyz06531aw0ts7l",
+	"bot": {
+		"version": "$LATEST",
+		"name": "WorkSpacesVending"
+	},
+	"inputTranscript": "yes",
+	"invocationSource": "FulfillmentCodeHook",
+	"outputDialogMode": "Text",
+	"messageVersion": "1.0",
+	"sessionAttributes": {}
+}

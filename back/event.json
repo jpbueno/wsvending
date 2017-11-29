@@ -1,0 +1,46 @@
+{
+	"currentIntent": {
+		"slots": {
+			"directory": "d-90672b984c",
+			"username": "dani",
+			"runningmode": "AUTO_STOP",
+			"bundle": "wsb-vlqkr17jy"
+		},
+		"confirmationStatus": "None",
+		"name": "CreateWorkSpace",
+		"slotDetails": {
+			"directory": {
+				"originalValue": "jpdomain",
+				"resolutions": [{
+					"value": "d-90672b984c"
+				}]
+			},
+			"username": {
+				"originalValue": "jpsant",
+				"resolutions": []
+			},
+			"runningmode": {
+				"originalValue": "auto stop",
+				"resolutions": [{
+					"value": "AUTO_STOP"
+				}]
+			},
+			"bundle": {
+				"originalValue": "test",
+				"resolutions": [{
+					"value": "wsb-vlqkr17jy"
+				}]
+			}
+		}
+	},
+	"userId": "qj19vlckzje7ajlr06sp541bbecsemzu",
+	"bot": {
+		"version": "$LATEST",
+		"name": "WorkSpacesVending"
+	},
+	"inputTranscript": "jpsant",
+	"invocationSource": "FulfillmentCodeHook",
+	"outputDialogMode": "Text",
+	"messageVersion": "1.0",
+	"sessionAttributes": {}
+}
