@@ -1,0 +1,130 @@
+body {
+  height: 100%;
+  background-color: #fff;
+  /* text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);*/
+  margin:40px;
+}
+
+input#wisdom {
+  padding: 4px;
+  font-size: 1em;
+  width: 400px
+}
+
+input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+p.userRequest {
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  min-width: 50%;
+  max-width: 85%;
+  float: left;
+  background-color: #7d7;
+}
+
+p.lexResponse {
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  text-align: right;
+  min-width: 50%;
+  max-width: 85%;
+  float: right;
+  background-color: #bbf;
+  font-style: italic;
+}
+
+p.lexError {
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  text-align: right;
+  min-width: 50%;
+  max-width: 85%;
+  float: right;
+  background-color: #f77;
+}
+
+#divCard{
+  text-align:center;
+  background:#fff;
+  border: none !important;
+}
+
+#divCardBlock{
+  text-align:left;
+  background:#fff;
+  border: none !important;
+}
+
+#divMain{
+  text-align:left;
+  background:#fff;
+  border: none !important;
+}
+
+#divTalkButton{
+  text-align:center;
+  background:#fff;
+  border: none !important;
+}
+
+#divInstructions{
+  color:#404040;
+}
+
+#imageLogo{
+  width:17%;
+}
+
+#imgAws{
+  width:6%;
+}
+
+#buttonRefresh{
+    padding: 0; 
+    border: none; 
+    background: none;
+    color: #4d4d4d;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    text-align: center;
+}

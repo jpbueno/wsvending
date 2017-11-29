@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Amazon WorkSpaces Vending Machine</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
+    crossorigin="anonymous"/ rel="stylesheet">
+    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Favicon Icon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+    <script src="js/ChattyKathy.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Audio Player -->
+    <audio>
+      <source class="track" src="" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <img id="imageLogo" src="images/wsvending.png" class="mx-auto"></img>
+
+      <div id="divNavbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button id="buttonRefresh" type="button" onClick="window.location.href=window.location.href" <i class="fa fa-refresh fa-2x" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="dicContainer" class="container">
+
+      <!-- Main Divs -->
+      <div id= "divRow" class="row">
+        <div id= "divMain" class="col-md-8">
+        <p></p>
+
+        <!-- Talk Button Divs -->
+          <div id= "divCard" class="card">
+            <div id= "divTalkButton" class="card-header">
+              <button id="buttonMic" type="button" onClick="javascript: startDictation();" class="btn btn-info btn-circle btn-xl mr-sm-2"><i class="glyphicon glyphicon-link fa fa-microphone fa-2x" aria-hidden="true"></i></button>
+            </div>
+
+            <!-- Conversation Divs -->
+            <div id="divCardBlock" class="card-block">
+              <div id="divConversation" style="height: 400px; border: 1px solid #ccc; background-color: #eee; padding: 5px; overflow: scroll"></div>
+              	<form id="formChat" onsubmit="return pushChat();">
+              		<input id="wisdom" type="text" class="form-control" style="width: 100%" value="" placeholder="Write here and press Enter to talk to me.">
+                </form>
+            </div>
+
+            <p></p>
+
+            <script src="js/bot.js"></script>
+
+            </div> <!-- Talk Button Divs -->
+          </div> <!-- col -->
+
+          <!-- Instructions Div-->
+          <div id="divInstructions" class="col-md-4 mx-auto">
+            <p></p>
+            <h4>What is the Amazon WorkSpaces Vending Machine?</h4>
+            <p>The Amazon WorkSpaces Vending Machine is your personal assistant for Amazon WorkSpaces!</p>
+            <p>The ChatBot supports three funcions currently: <b>create, terminate and describe</b></p>
+            <ul>
+              <b>Create</b>
+              <li><i>Create workspace</i></li>
+              <li><i>Provision workspace</i></li>
+              <li><i>I want a workspace</i></li>
+              <p></p>
+              <b>Terminate</b>
+              <li><i>Terminate workspace</i></li>
+              <li><i>Destroy my workspace</i></li>
+              <p></p>
+              <b>Describe</b>
+              <li><i>Describe workspace<i></li>
+              <li><i>List my workspace<i></li>
+            </ul>
+             <a href="https://aws.amazon.com/workspaces">Learn More about Amazon WorksSpaces</a>
+
+            </div>
+          <p></p>
+          </div>
+
+        <p></p>
+
+        <!-- Footer Div -->
+        <div id="divFooter" class="footer">
+          <img id="imgAws" src="images/aws_logo.png" class="rounded mx-auto d-block"></img>
+          <p></p>
+          <p>JP Santana</p>
+        </div>
+
+  </body>
+</html>
