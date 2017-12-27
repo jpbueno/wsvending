@@ -28,9 +28,13 @@ def lambda_handler(event, context):
         workspaceid = response['Workspaces'][0]['WorkspaceId']
 
         connection = client.describe_workspaces_connection_status(
-            WorkspaceIds= workspaceid
+            WorkspaceIds= [
+                workspaceid
+            ]
         )
-        # msg = 'Your Amazon WorkSpace ID {} is being terminated!'.format(workspaceid)
+
+        connstatus = connection['WorkspacesConnectionStatus'][0]['ConnectionState']
+        msg = 'The Amazon WorkSpace ID {} connection status is {}.'.format(workspaceid, connstatus)
 
     print connection
 
