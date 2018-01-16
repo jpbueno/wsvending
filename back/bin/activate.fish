@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/jpsant/WorkDocs/AWS/Demos/Workspaces/WSVendingMachine/back"
+set -gx VIRTUAL_ENV "/Users/jpsant/WorkDocs/AWS/Demos/Workspaces/WSVendingMachine/wsvending/back"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

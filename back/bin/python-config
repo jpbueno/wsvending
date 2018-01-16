@@ -1,4 +1,4 @@
-#!/Users/jpsant/WorkDocs/AWS/Demos/Workspaces/WSVendingMachine/back/bin/python
+#!/Users/jpsant/WorkDocs/AWS/Demos/Workspaces/WSVendingMachine/wsvending/back/bin/python
 
 import sys
 import getopt
