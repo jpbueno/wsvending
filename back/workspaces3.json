@@ -1,0 +1,53 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "This AWS CloudFormation Template provisions an Amazon Workspaces instance. Created by jpsant@amazon.com",
+    "Parameters": {
+        "BundleId": {
+            "Type": "String",
+            "Description": "BundleId",
+            "MinLength": "3",
+            "MaxLength": "20"
+        },
+        "DirectoryId": {
+            "Type": "String",
+            "Description": "DirectoryId",
+            "MinLength": "3",
+            "MaxLength": "20"
+        },
+        "UserName": {
+            "Type": "String",
+            "Description": "UserName",
+            "MinLength": "3",
+            "MaxLength": "20"
+        }
+    },
+    "Resources": {
+        "JpWorkSpace": {
+            "Type": "AWS::WorkSpaces::Workspace",
+            "Properties": {
+                "BundleId": {
+                    "Ref": "BundleId"
+                },
+                "DirectoryId": {
+                    "Ref": "DirectoryId"
+                },
+                "UserName": {
+                    "Ref": "UserName"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f31c7aca-c01c-4c90-9b57-e130d8f289e5"
+                }
+            }
+        }
+    },
+    "Outputs": {
+        "JpWorkSpaceId": {
+            "Description": "The ID of the newly created WorkSpace",
+            "Value": {
+                "Ref": "JpWorkSpace"
+            }
+        }
+    }
+}
