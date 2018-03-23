@@ -19,3 +19,4 @@ Here are some interactions you can try:
 
 
 Learn More about Amazon WorksSpaces
+https://aws.amazon.com/workspaces/
