@@ -1,20 +1,35 @@
-# What is the Amazon WorkSpaces Vending Machine?
+## What is the Amazon WorkSpaces Vending Machine?
 The Amazon WorkSpaces Vending Machine is a ChatOps that interacts with Amazon WorkSpaces APIs!
 
 Here are some interactions you can try:
 
-Create
+* Create
 "Create workspace"
-Terminate
+
+
+* Terminate
 "Terminate workspace"
-Describe
+
+
+* Describe
 "Describe workspace"
-Reboot
+
+
+* Reboot
 "Reboot my workspace"
-Rebuild
+
+
+* Rebuild
 "Rebuild my workspace"
-"Connection Status"
+
+
+* Connection Status
 "Check my connection status"
-Modify Running Mode
+
+
+* Modify Running Mode
+
 "Modify my workspace running mode"
+
+
 Learn More about Amazon WorksSpaces
