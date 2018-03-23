@@ -18,5 +18,4 @@ Here are some interactions you can try:
 * Modify Running Mode
 
 
-Learn More about Amazon WorksSpaces
-https://aws.amazon.com/workspaces/
+Learn More about Amazon WorksSpaces: https://aws.amazon.com/workspaces/
