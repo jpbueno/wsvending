@@ -44,7 +44,7 @@ var enterEvent = jQuery.Event("keypress", {
         sessionAttributes: sessionAttributes
       };
       showRequest(wisdom);
-      lexruntime.postContent(params, function(err, data) {
+      lexruntime.postText(params, function(err, data) {
         if (err) {
           console.log(err, err.stack);
           showError('Error:  ' + err.message + ' (see console for details)')
